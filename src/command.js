@@ -54,7 +54,7 @@ class Firebase2GraphQL extends Command {
     try {
       spinnerStart('Verifying URL');
       const resp = await fetch(
-        `${url}/v1/query`,
+        `${url}/v1/graphql`,
         {
           method: 'POST',
           headers,
